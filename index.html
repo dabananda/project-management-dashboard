@@ -23,7 +23,7 @@
     </style>
   </head>
   <body class="bg-gray-100">
-    <div class="max-w-[1440px] mx-auto py-3">
+    <div class="max-w-[1440px] mx-auto p-3 md:py-3 ">
       <!-- Header -->
       <header class="flex justify-between items-center">
         <p class="text-2xl font-semibold">Dashboard</p>
@@ -55,7 +55,7 @@
       <!-- Main body -->
       <main>
         <!-- Status card -->
-        <div class="grid grid-cols-4 gap-6 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           <!-- TOTAL TASK -->
           <div class="bg-white rounded-xl shadow-md p-4">
             <p class="font-medium text-gray-500 mb-4">TOTAL TASK</p>
@@ -166,12 +166,12 @@
         </div>
 
         <!-- Task Table -->
-        <div class="grid grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <!-- Today's Tasks -->
           <div
             class="bg-white px-4 border-b border-gray-100 rounded-xl shadow-md mt-8"
           >
-            <p class="font-bold text-2xl py-4">Today's Tasks</p>
+            <p class="font-bold text-2xl py-4 text-center md:text-start">Today's Tasks</p>
             <div class="divide-y divide-gray-200">
               <!-- Task 01 -->
               <div class="grid grid-cols-2 py-4">
@@ -227,7 +227,7 @@
           <div
             class="bg-white px-4 border-b border-gray-100 rounded-xl shadow-md mt-8"
           >
-            <p class="font-bold text-2xl py-4">All Tasks</p>
+            <p class="font-bold text-2xl py-4 text-center md:text-start">All Tasks</p>
             <div class="divide-y divide-gray-200">
               <!-- Table header -->
               <div class="grid grid-cols-4 text-sm text-gray-500 mb-4">
@@ -236,7 +236,6 @@
                 <p class="font-semibold">TEAM</p>
                 <p class="font-semibold">ASSIGNED AT</p>
               </div>
-              <!-- Task list -->
               <!-- Task 01 -->
               <div class="grid grid-cols-4 py-4">
                 <!-- TASK TITLE -->
