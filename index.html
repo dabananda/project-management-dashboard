@@ -166,119 +166,181 @@
         </div>
 
         <!-- Task Table -->
-        <div
-          class="bg-white px-4 pt-4 border-b border-gray-100 rounded-xl shadow-md mt-8 divide-y divide-gray-200"
-        >
-          <!-- Table header -->
-          <div class="grid grid-cols-4 text-sm text-gray-500 mb-4">
-            <p class="font-semibold">TASK TITLE</p>
-            <p class="font-semibold">PRIORITY</p>
-            <p class="font-semibold">TEAM</p>
-            <p class="font-semibold">ASSIGNED AT</p>
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Today's Tasks -->
+          <div
+            class="bg-white px-4 border-b border-gray-100 rounded-xl shadow-md mt-8"
+          >
+            <p class="font-bold text-2xl py-4">Today's Tasks</p>
+            <div class="divide-y divide-gray-200">
+              <!-- Task 01 -->
+              <div class="grid grid-cols-2 py-4">
+                <!-- TASK TITLE -->
+                <div class="flex items-center">
+                  <p class="w-2 h-2 rounded-full bg-green-500 me-2"></p>
+                  <span class="font-semibold">Complete project proposal</span>
+                </div>
+                <!-- PRIORITY -->
+                <div class="flex justify-end">
+                  <span
+                    class="text-sm text-gray-500"
+                  >
+                    High
+                  </span>
+                </div>
+              </div>
+              <!-- Task 02 -->
+              <div class="grid grid-cols-2 py-4">
+                <!-- TASK TITLE -->
+                <div class="flex items-center">
+                  <p class="w-2 h-2 rounded-full bg-yellow-500 me-2"></p>
+                  <span class="font-semibold">Review team updates</span>
+                </div>
+                <!-- PRIORITY -->
+                <div class="flex justify-end">
+                  <span
+                    class="text-sm text-gray-500"
+                  >
+                    Normal
+                  </span>
+                </div>
+              </div>
+              <!-- Task 03 -->
+              <div class="grid grid-cols-2 py-4">
+                <!-- TASK TITLE -->
+                <div class="flex items-center">
+                  <p class="w-2 h-2 rounded-full bg-blue-500 me-2"></p>
+                  <span class="font-semibold">Prepare for client meeting</span>
+                </div>
+                <!-- PRIORITY -->
+                <div class="flex justify-end">
+                  <span
+                    class="text-sm text-gray-500"
+                  >
+                    Low
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Task list -->
-          <!-- Task 01 -->
-          <div class="grid grid-cols-4 py-4">
-            <!-- TASK TITLE -->
-            <div class="flex items-center">
-              <p class="w-2 h-2 rounded-full bg-green-500 me-2"></p>
-              <span class="font-semibold">Test Task 01</span>
+          <!-- Total Tasks -->
+          <div
+            class="bg-white px-4 border-b border-gray-100 rounded-xl shadow-md mt-8"
+          >
+            <p class="font-bold text-2xl py-4">All Tasks</p>
+            <div class="divide-y divide-gray-200">
+              <!-- Table header -->
+              <div class="grid grid-cols-4 text-sm text-gray-500 mb-4">
+                <p class="font-semibold">TASK TITLE</p>
+                <p class="font-semibold">PRIORITY</p>
+                <p class="font-semibold">TEAM</p>
+                <p class="font-semibold">ASSIGNED AT</p>
+              </div>
+              <!-- Task list -->
+              <!-- Task 01 -->
+              <div class="grid grid-cols-4 py-4">
+                <!-- TASK TITLE -->
+                <div class="flex items-center">
+                  <p class="w-2 h-2 rounded-full bg-green-500 me-2"></p>
+                  <span class="font-semibold">Test Task 01</span>
+                </div>
+                <!-- PRIORITY -->
+                <div>
+                  <span
+                    class="rounded-full bg-green-100 text-green-600 text-sm px-3 py-1"
+                  >
+                    Low
+                  </span>
+                </div>
+                <!-- TEAM -->
+                <div class="flex -space-x-2">
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
+                    >AD</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-green-500 rounded-full"
+                    >BH</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-yellow-500 rounded-full"
+                    >CK</span
+                  >
+                </div>
+                <!-- ASSIGNED AT -->
+                <div class="text-gray-500">2 months ago</div>
+              </div>
+              <!-- Task 02 -->
+              <div class="grid grid-cols-4 py-4">
+                <!-- TASK TITLE -->
+                <div class="flex items-center">
+                  <p class="w-2 h-2 rounded-full bg-yellow-500 me-2"></p>
+                  <span class="font-semibold">Test Task 02</span>
+                </div>
+                <!-- PRIORITY -->
+                <div>
+                  <span
+                    class="rounded-full bg-yellow-100 text-yellow-600 text-sm px-3 py-1"
+                  >
+                    Medium
+                  </span>
+                </div>
+                <!-- TEAM -->
+                <div class="flex -space-x-2">
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-rose-500 rounded-full"
+                    >BA</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-fuchsia-500 rounded-full"
+                    >CD</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-violet-500 rounded-full"
+                    >FH</span
+                  >
+                </div>
+                <!-- ASSIGNED AT -->
+                <div class="text-gray-500">3 months ago</div>
+              </div>
+              <!-- Task 03 -->
+              <div class="grid grid-cols-4 py-4">
+                <!-- TASK TITLE -->
+                <div class="flex items-center">
+                  <p class="w-2 h-2 rounded-full bg-rose-500 me-2"></p>
+                  <span class="font-semibold">Test Task 03</span>
+                </div>
+                <!-- PRIORITY -->
+                <div>
+                  <span
+                    class="rounded-full bg-rose-100 text-rose-600 text-sm px-3 py-1"
+                  >
+                    High
+                  </span>
+                </div>
+                <!-- TEAM -->
+                <div class="flex -space-x-2">
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-yellow-500 rounded-full"
+                    >CA</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
+                    >BH</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-rose-500 rounded-full"
+                    >DC</span
+                  >
+                  <span
+                    class="p-1 border-2 border-white text-sm text-white bg-green-500 rounded-full"
+                    >EB</span
+                  >
+                </div>
+                <!-- ASSIGNED AT -->
+                <div class="text-gray-500">2 months ago</div>
+              </div>
             </div>
-            <!-- PRIORITY -->
-            <div>
-              <span
-                class="rounded-full bg-green-100 text-green-600 text-sm px-3 py-1"
-              >
-                Low
-              </span>
-            </div>
-            <!-- TEAM -->
-            <div class="flex -space-x-2">
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >AA</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >BA</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >CA</span
-              >
-            </div>
-            <!-- ASSIGNED AT -->
-            <div class="text-gray-500">2 months ago</div>
-          </div>
-          <!-- Task 02 -->
-          <div class="grid grid-cols-4 py-4">
-            <!-- TASK TITLE -->
-            <div class="flex items-center">
-              <p class="w-2 h-2 rounded-full bg-yellow-500 me-2"></p>
-              <span class="font-semibold">Test Task 02</span>
-            </div>
-            <!-- PRIORITY -->
-            <div>
-              <span
-                class="rounded-full bg-yellow-100 text-yellow-600 text-sm px-3 py-1"
-              >
-                Medium
-              </span>
-            </div>
-            <!-- TEAM -->
-            <div class="flex -space-x-2">
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >BA</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >CD</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >FB</span
-              >
-            </div>
-            <!-- ASSIGNED AT -->
-            <div class="text-gray-500">3 months ago</div>
-          </div>
-          <!-- Task 03 -->
-          <div class="grid grid-cols-4 py-4">
-            <!-- TASK TITLE -->
-            <div class="flex items-center">
-              <p class="w-2 h-2 rounded-full bg-rose-500 me-2"></p>
-              <span class="font-semibold">Test Task 03</span>
-            </div>
-            <!-- PRIORITY -->
-            <div>
-              <span
-                class="rounded-full bg-rose-100 text-rose-600 text-sm px-3 py-1"
-              >
-                High
-              </span>
-            </div>
-            <!-- TEAM -->
-            <div class="flex -space-x-2">
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >CA</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >BH</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >DC</span
-              >
-              <span
-                class="p-1 border-2 border-white text-sm text-white bg-blue-500 rounded-full"
-                >EB</span
-              >
-            </div>
-            <!-- ASSIGNED AT -->
-            <div class="text-gray-500">2 months ago</div>
           </div>
         </div>
       </main>
